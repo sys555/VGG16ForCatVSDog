@@ -8,6 +8,9 @@ from keras.utils import get_file, np_utils
 from PIL import Image
 
 from model.VGG16 import VGG16
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 
 WEIGHTS_PATH_NO_TOP = ('https://github.com/fchollet/deep-learning-models/'
                        'releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5')
